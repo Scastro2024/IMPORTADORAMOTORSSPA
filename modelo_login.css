@@ -1,0 +1,140 @@
+/* Estilos generales del cuerpo */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #00b09b, #96c93d); /* Gradiente de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Contenedor del formulario de inicio de sesión */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos del formulario de inicio de sesión */
+.login-form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Estilos del encabezado del formulario */
+.login-form h1 {
+    margin: 0 0 20px;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos de los campos del formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Estilos del botón de inicio de sesión */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background: #28a745;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #218838;
+    transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+}
+
+button:active {
+    transform: translateY(0); /* Desactivar el efecto al hacer clic */
+}
+
+/* Estilos del mensaje de error */
+#errorMessage {
+    color: #dc3545;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Clase para ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* Estilos del pie de página */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+    border-top: 1px solid #ccc; /* Línea superior en el pie de página */
+}
+
+/* Símbolo de copyright */
+footer p {
+    margin: 0;
+}
+
+/* Icono de copyright */
+footer p::before {
+    content: "© ";
+    font-size: 16px;
+    color: #333;
+    vertical-align: middle;
+}
+
+footer .copyright {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+}
+
+footer .copyright .circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-right: 5px;
+}
